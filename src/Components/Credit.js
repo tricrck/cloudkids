@@ -5,8 +5,8 @@ import { Elements, PaymentElement, useStripe, useElements } from '@stripe/react-
 import { loadStripe } from '@stripe/stripe-js';
 
 function Credit({ creditCardOption, setcreditCardOption, paypalOption, setpaypalOption }) {
-  const stripePromise = loadStripe('pk_test_51PGcjzEOhVuARvtZlWNTVWf60XLOrYe0DFMg8ydY1RRm7whictVl2k0k1IvGprxySk9XcTbP1D0gDXebMxVGSopV00c3t6Poly');
-  const [clientSecret, setClientSecret] = useState('sk_test_51PGcjzEOhVuARvtZWzPHl5ZkXRp6mL1FxK8jY4NqE4gKBwu7afcDuoFyX5ZpN44O3u5vMdpJEsPFNQ2nezu6u2wY00lbjyraP9');
+  const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+  const [clientSecret, setClientSecret] = useState(process.env.REACT_APP_STRIPE_SECRET_KEY);
   const [paymentError, setPaymentError] = useState(null);
 
   const stripe = useStripe();
