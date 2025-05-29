@@ -3,7 +3,7 @@ import { Typography, Container, Grid } from '@mui/material';
 
 function Cloudkids() {
   return (
-    <div style={{ marginBottom: '5px', height: '50vh' }}>
+    <div style={{ marginTop: '40px', marginBottom: '5px', height: '50vh' }}>
       <br />
       <Typography variant="h2" align="center" gutterBottom id="introduction">Cloud Kids</Typography>
       <br />

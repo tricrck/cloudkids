@@ -13,8 +13,9 @@ code {
 }
 
 main {
-  min-height: 100vh;
-  margin-top: 40px;
+  min-height: 90vh;
+  margin-top: 28px;
+  margin-bottom: -40px;
 }
 
 .reader {
